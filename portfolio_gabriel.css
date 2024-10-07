@@ -580,9 +580,12 @@ main {
             hsla(0, 0%, 0%, 0) 0%,
             hsla(0, 0%, 0%, 0.3) 10%,
             hsl(0, 0%, 0%) 100%);
-    transform: translateY(62%);
+    transform: translateY(54%);
     transition: transform 500ms ease-out;
-    transition-delay: 500ms;
+}
+
+.card__content--container h3, .card__content--container p{
+    color: var(--white-color);
 }
 
 .card__title::after {
@@ -880,6 +883,7 @@ footer p {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        padding-left: 5rem;
     }
 
     .experience-card {
@@ -899,7 +903,7 @@ footer p {
     header .topnav>a:first-child {
         background-image: url(../images/logohorizontal.png);
         height: 55px;
-        width: 10%;
+        width: 20%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
