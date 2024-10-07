@@ -146,14 +146,19 @@ header {
     padding: .5rem;
 }
 
-header .topnav>a:first-child {
-    background-image: url(../images/logohorizontal.png);
+#home > .topnav > a:first-child{
+    padding: 0 .5rem;
+}
+
+header img {
+    display: block;
     height: 55px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: 0;
     outline: 0;
+    padding-left: 1rem;
 }
 
 .topnav {
@@ -899,17 +904,6 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
-
-    header .topnav>a:first-child {
-        background-image: url(../images/logohorizontal.png);
-        height: 55px;
-        width: 20%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        border: 0;
-        outline: 0;
-    }
 
     .topnav {
         display: flex;
