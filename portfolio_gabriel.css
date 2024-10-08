@@ -5,18 +5,18 @@
     --font-montserrat: "Montserrat", sans-serif;
     --font-poppins: "Poppins", sans-serif;
 
-    --bg-color: #E7F6F2;
-    --head-foot-color: #A9A9A9;
-    --text-color: #3A3D46;
-    --hover-color: #000;
-    --btn-color: #B8A9C9;
-    --white-color: #fff;
+    --bg-color: #13332d;
+    --head-foot-color: #494f52;
+    --text-color: #c0bab2;
+    --hover-color: #000000;
+    --btn-color: #362a42;
+    --white-color: #181a1b;
 
     --font-size-h1: 3.10rem;
     --font-size-h2: 2.5rem;
     --font-size-h3: 2rem;
     --font-size-h4: 1.75rem;
-    --font-size-paragraph: 1.25rem;
+    --font-size-paragraph: 1rem;
     --font-size-small: 1rem;
     --font-size-caption: 0.875rem;
 
@@ -117,7 +117,7 @@ h3,
 cite,
 .experience-card h3,
 .contact-info p {
-    color: var(--hover-color);
+    color: var(--text-color);
 }
 
 button,
@@ -188,7 +188,7 @@ header img {
 }
 
 .topnav a {
-    color: var(--white-color);
+    color: var(--hover-color);
     padding: 14px 16px;
     text-decoration: none;
     font-size: var(--font-size-small);
@@ -197,7 +197,7 @@ header img {
 }
 
 .topnav a.icon {
-    background-color: var(--white-color);
+    background-color: white;
     color: var(--hover-color);
     font-size: var(--font-size-paragraph);
     display: block;
@@ -255,18 +255,13 @@ header img {
     width: fit-content;
     margin: auto;
     background-color: var(--hover-color);
-    color: var(--bg-color);
+    color: var(--text-color);
     padding: 10px 30px 10px 20px;
     font-weight: bold;
     font-size: var(--font-size-small);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.btn-intro:hover {
-    background-color: color-mix(in srgb, var(--hover-color), white 20%);
-    color: var(--white-color);
 }
 
 .btn-intro {
@@ -281,7 +276,7 @@ header img {
     width: 2px;
     height: 10px;
     transform: rotate(-40deg);
-    background-color: var(--white-color);
+    background-color: var(--text-color);
     transition: all .2s ease-in-out;
 }
 
@@ -293,7 +288,7 @@ header img {
     width: 2px;
     height: 10px;
     transform: rotate(40deg);
-    background-color: var(--white-color);
+    background-color: var(--text-color);
     transition: all .2s ease-in-out;
 }
 
@@ -303,7 +298,7 @@ header img {
     right: 14px;
     width: 2px;
     height: 2px;
-    background-color: var(--white-color);
+    background-color: var(--text-color);
     transition: all .2s ease-in-out;
 }
 
@@ -319,9 +314,10 @@ header img {
 
 .social-links a {
     display: inline-block;
-    color: color-mix(in srgb, var(--hover-color), white 33%);
-    padding: .75em;
+    color: color-mix(in srgb, var(--hover-color), white 75%);
+    padding: 0 .5em;
     background-color: transparent;
+    font-size: var(--font-size-h4);
     transition: color 0.3s ease;
 }
 
@@ -446,6 +442,9 @@ main {
     min-height: 600px;
     position: relative;
     background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #experience:after {
@@ -460,15 +459,14 @@ main {
 #experience .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     position: relative;
     gap: var(--gap-dafault);
     width: 90%;
     max-width: 1000px;
     min-height: 600px;
-    margin: auto;
-    padding-bottom: 2rem;
+    margin: 2rem 2rem 0;
+    padding: 1rem 0 3rem 3rem;
     border-left: 10px solid var(--btn-color);
 }
 
@@ -590,7 +588,7 @@ main {
 }
 
 .card__content--container h3, .card__content--container p{
-    color: var(--white-color);
+    color: white;
 }
 
 .card__title::after {
@@ -606,6 +604,18 @@ main {
     transition: opacity 1000ms ease-in, transform 500ms ease-out;
     transition-delay: 500ms;
     transform-origin: right;
+}
+
+.card__button{
+    border-radius: 0.625rem;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    font-size: var(--font-size-paragraph);
+}
+
+.card__button:hover{
+    background-color: var(--btn-color);
 }
 
 .card__link:hover .card__content--container > :not(.card__title),
@@ -634,7 +644,7 @@ main {
 
 #estudos {
     padding: var(--padding-default);
-    background-color: #f9f9f9;
+    background-color: var(--hover-color);
     text-align: center;
     padding-bottom: 2rem;
 }
@@ -645,7 +655,7 @@ main {
 
 #estudos p {
     margin-bottom: 3rem;
-    color: #555;
+    color: var(--text-color);
 }
 
 .tecnologias-grid {
@@ -655,7 +665,7 @@ main {
 }
 
 .tecnologia-card {
-    background-color: #fff;
+    background-color: var(--white-color);
     border-radius: 0.625rem;
     padding: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -669,13 +679,14 @@ main {
 
 .tecnologia-card img {
     width: 100px;
+    border-radius: 50%;
     height: auto;
     margin-bottom: 1.5rem;
     transition: transform 0.3s ease;
 }
 
 .tecnologia-card h3 {
-    color: #333;
+    color: var(--text-color);
     margin: 0;
 }
 
@@ -728,7 +739,7 @@ form fieldset {
 form label {
     font-size: var(--font-size-paragraph);
     margin-bottom: 0.5rem;
-    color: #5D5D5D;
+    color: var(--text-color);
 
 }
 
@@ -803,8 +814,12 @@ footer {
     text-align: center;
 }
 
+footer .container {
+    padding: 2rem 0 !important;
+}
+
 footer p {
-    color: var(--white-color);
+    color: var(--text-color);
 }
 
 
@@ -883,18 +898,6 @@ footer p {
         flex-direction: row;
     }
 
-    #experience .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-left: 5rem;
-    }
-
-    .experience-card {
-        width: 48%;
-    }
-
     .projetos-grid {
         flex-direction: row;
         flex-wrap: wrap;
@@ -922,7 +925,7 @@ footer p {
 
     #myLinks a {
         color: var(--hover-color);
-        background-color: var(--white-color);
+        background-color: white;
     }
 
 }
