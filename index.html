@@ -49,6 +49,7 @@
                     <p>Transformando ideias em realidade com código limpo e sustentável</p>
                     <a href="#about" class="btn-intro">Saiba mais<span></span></a>
                 </div>
+                <img src="images/logo.png" alt="">
                 <div class="social-links">
                     <a href="https://github.com/seuusuario" target="_blank" title="GitHub"><i
                             class="fa-brands fa-github"></i></a>
@@ -71,7 +72,6 @@
                         <p>me chamo Gabriel Caldas, sou desenvolvedor de software desde 2021, com destaque na
                             implementação do ERP Fox Manager na empresa Rede Amazônica de Telecomunicação em 2022/2023.
                         </p>
-                        <br>
                         <p>Trago habilidades de gestão e solução de problemas da minha experiência de 8 anos no ramo de
                             logística operacional, aplicando essas competências no desenvolvimento de soluções
                             eficientes.</p>
@@ -118,14 +118,15 @@
         </section>
 
         <section class="best-pratices">
-            <div class="pratices-container">
+            <div class="pratices-container container">
                 <article>
                     <h2>Diferenciais</h2>
                     <p>No meu trabalho como desenvolvedor, faço questão de seguir os princípios de
                         <strong>SOLID</strong> e <strong>Clean Code</strong>. Isso significa que sempre busco escrever
                         um código que seja claro, organizado e fácil de entender, tanto para mim quanto para outras
                         pessoas que possam trabalhar nele no futuro. Também sou grande fã das <strong>metodologias
-                            ágeis</strong>, como Scrum e Kanban.</p>
+                            ágeis</strong>, como Scrum e Kanban.
+                    </p>
                 </article>
             </div>
         </section>
@@ -133,7 +134,7 @@
         <section id="experience">
             <h2>Experiência</h2>
             <div class="container">
-                <i class="fa-solid fa-rocket"></i>
+                <!-- <i class="fa-solid fa-rocket"></i> -->
                 <article class="experience-card">
                     <h3>Full-stack Developer</h3>
                     <p>Feb 2021 - Presente</p>
@@ -162,14 +163,27 @@
         </section>
 
         <section id="projetos" class="projetos">
-            <h2>Meus Projetos</h2>
-            <p>Aqui estão alguns dos projetos que desenvolvi recentemente. Clique nas imagens para saber mais.</p>
             <div class="container">
+                <h2>Meus Projetos</h2>
+                <p>Aqui estão alguns dos projetos que desenvolvi recentemente. Clique nas imagens para saber mais.</p>
                 <div class="projetos-grid">
+
+                    <a href="projects/ProjetoSerDigital-inicio/index.html" target="_blank" class="card__link">
+                        <div class="card">
+                            <img class="card__background" src="projects/serdigital.png" alt="Descrição do Projeto SerDigital">
+                            <div class="card__content">
+                                <div class="card__content--container">
+                                    <h3 class="card__title">SerDigital</h3>
+                                    <p>Plataforma de serviços digitais, desenvolvida com HTML e CSS puro.</p>
+                                </div>
+                                <button class="card__button">Ver mais</button>
+                            </div>
+                        </div>
+                    </a>
 
                     <a href="projects/AprenSER/aprenser.html" target="_blank" class="card__link">
                         <div class="card">
-                            <img class="card__background" src="projects/aprenser.png" alt="Descrição do Projeto 1">
+                            <img class="card__background" src="projects/aprenser.png" alt="Descrição do Projeto AprenSER">
                             <div class="card__content">
                                 <div class="card__content--container">
                                     <h3 class="card__title">AprenSER</h3>
@@ -182,7 +196,7 @@
 
                     <a href="projects/RangeHotels/range-hotels.html" target="_blank" class="card__link">
                         <div class="card">
-                            <img class="card__background" src="projects/rangehotels.png" alt="Descrição do Projeto 2">
+                            <img class="card__background" src="projects/rangehotels.png" alt="Descrição do Projeto Range Hotels">
                             <div class="card__content">
                                 <div class="card__content--container">
                                     <h3 class="card__title">Range Hotels</h3>
@@ -195,7 +209,7 @@
 
                     <a href="projects/ModaOra/moda-ora.html" target="_blank" class="card__link">
                         <div class="card">
-                            <img class="card__background" src="projects/modaora.png" alt="Descrição do Projeto 3">
+                            <img class="card__background" src="projects/modaora.png" alt="Descrição do Projeto Moda ORA">
                             <div class="card__content">
                                 <div class="card__content--container">
                                     <h3 class="card__title">Moda Ora</h3>
@@ -208,7 +222,7 @@
 
                     <a href="projects/Dashboard/dashboard-model.html" target="_blank" class="card__link">
                         <div class="card">
-                            <img class="card__background" src="projects/dashboard.png" alt="Descrição do Projeto 4">
+                            <img class="card__background" src="projects/dashboard.png" alt="Descrição do Projeto Modelo Dashboard">
                             <div class="card__content">
                                 <div class="card__content--container">
                                     <h3 class="card__title">Dashboard Model</h3>
@@ -221,7 +235,7 @@
 
                     <a href="projects/MyComponents/formulario.html" target="_blank" class="card__link">
                         <div class="card">
-                            <img class="card__background" src="projects/mycomponents.png" alt="Descrição do Projeto 5">
+                            <img class="card__background" src="projects/mycomponents.png" alt="Descrição do Projeto My Components">
                             <div class="card__content">
                                 <div class="card__content--container">
                                     <h3 class="card__title">MyComponents</h3>
@@ -237,9 +251,9 @@
         </section>
 
         <section id="estudos" class="estudos">
-            <h2>Minhas Tecnologias em Estudo</h2>
-            <p>Atualmente, estou focado em aprender as seguintes tecnologias:</p>
             <div class="container">
+                <h2>Minhas Tecnologias em Estudo</h2>
+                <p>Atualmente, estou focado em aprender as seguintes tecnologias:</p>
                 <div class="tecnologias-grid">
                     <div class="tecnologia-card">
                         <img src="studies/react-logo.png" alt="React">
@@ -290,17 +304,21 @@
                 <form id="contactForm">
                     <fieldset>
                         <label for="name">Seu nome</label>
-                        <input type="text" name="name" id="name" placeholder="Digite aqui" minlength="5" maxlength="50" required>
-                
+                        <input type="text" name="name" id="name" placeholder="Digite aqui" minlength="5" maxlength="50"
+                            required>
+
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="email@exemplo.com.br" maxlength="75" required>
-                
+                        <input type="email" name="email" id="email" placeholder="email@exemplo.com.br" maxlength="75"
+                            required>
+
                         <label for="assunto">Assunto</label>
-                        <input type="text" name="assunto" id="assunto" placeholder="Digite aqui" minlength="5" maxlength="25" required>
-                
+                        <input type="text" name="assunto" id="assunto" placeholder="Digite aqui" minlength="5"
+                            maxlength="25" required>
+
                         <label for="message">Mensagem</label>
-                        <textarea name="message" id="message" placeholder="Escreva sua mensagem" rows="5" maxlength="500" required></textarea>
-                
+                        <textarea name="message" id="message" placeholder="Escreva sua mensagem" rows="5"
+                            maxlength="500" required></textarea>
+
                         <button type="submit">Enviar contato</button>
                     </fieldset>
                 </form>
@@ -308,33 +326,34 @@
                 <script>
                     document.getElementById('contactForm').addEventListener('submit', function (event) {
                         event.preventDefault();
-                
+
                         const formData = new FormData(this);
-                
+
                         fetch('/send', {
                             method: 'POST',
                             body: new URLSearchParams(formData)
                         })
-                        .then(response => response.text())
-                        .then(result => {
-                            alert(result);
-                        })
-                        .catch(error => {
-                            console.error('Erro:', error);
-                        });
+                            .then(response => response.text())
+                            .then(result => {
+                                alert(result);
+                            })
+                            .catch(error => {
+                                console.error('Erro:', error);
+                            });
                     });
                 </script>
 
-                <div class="contact-info">
-                    <p><i class="fa-solid fa-phone"></i> <b>Telefone:</b> +55 (92) 99353-2513</p>
-                    <p><i class="fa-solid fa-paper-plane"></i> <b>Email:</b> gcc.codigo@gmail.com</p>
-                </div>
             </div>
         </section>
     </main>
 
     <footer>
+        
         <div class="container">
+            <div class="contact-info">
+                <p><i class="fa-solid fa-phone"></i> <b>Telefone:</b> +55 (92) 99353-2513</p>
+                <p><i class="fa-solid fa-paper-plane"></i> <b>Email:</b> gcc.codigo@gmail.com</p>
+            </div>
             <p>&copy; 2024 Gabriel Caldas</p>
         </div>
     </footer>
